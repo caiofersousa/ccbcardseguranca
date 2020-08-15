@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cards Segurança CCB - Sumaré</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css'  href='style.css'>
+    <script src='main.js'></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+<style>
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+
+<script>
+  $( document ).ready(function() {
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+      panel.style.display = 'block';
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+            panel.style.display = 'block';
+
+    }
+  });
+}
+});
+
+</script>
+
+<body>
+    <h1>Cards Segurança CCB - Sumaré</h1>
+    <button class="accordion">Quais são os EPIs para
+        trabalho em altura?</button>
+<div class="panel" id="panel1">
+  <p>Cinto de Segurança tipo paraquedista. ...
+    Talabarte Y. ...
+    Talabarte ajustável ( de posicionamento ) ...
+    Trava-quedas. ...
+    Capacete com jugular. ...
+    Botinas de Segurança. ...
+    Óculos de segurança
+    Também nao podemos esquecer que deve primeiro verificar se  o
+    local onde vai executar o serviço, há linha de vida</p>
+</div>
+
+<button class="accordion">Porque devo usar botina de segurança na obra?</button>
+<div class="panel" id="panel2">
+  <p>É comum em algumas obras pedaços de tábuas com pegos espalhados por todo lado.
+
+    Os pregos são perigosos, e em caso de acidente podem causar tétano, e levar a pessoa a ter que amputar um membro do corpo.
+    
+    Além de remover as tábuas com pregos para um lugar seguro, o uso da botina de segurança é indispensável para minimizar o risco.</p>
+</div>
+
+<button class="accordion">O que a exposição ao ruido pode provocar ao trabalhador?</button>
+<div class="panel" id="panel3">
+  <p>A exposição do trabalhador ao risco físico ruído pode provocar três efeitos auditivos: Trauma acústico; Perda auditiva temporária; e. Perda auditiva permanente.
+
+    Por isso é importante usar o protetor auricular para sua proteção.</p>
+</div> 
+<button class="accordion">Porque é importante utilizar a máscara?</button>
+<div class="panel" id="panel4">
+  <p>O uso das máscaras diminui a chance de contágio pelo novo coronavírus, reforçaram especialistas no programa "Combate ao Coronavírus".</p>
+</div> 
+</body>
+</html>
+
